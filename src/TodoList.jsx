@@ -55,6 +55,7 @@ function TodoList(){
         const listaAux = [...lista];
         listaAux.splice(index,1);
         // splice (posição em que inicia, quantos itens deletar a partir do início)
+        // splice vai fazer com que os itens seguintes na lista "recuem" uma posição
         setLista(listaAux);
     }
 
@@ -71,7 +72,7 @@ function TodoList(){
                     type="text"
                     placeholder='Adicione uma tarefa'
                     value={novoItem}
-                    // isto faz com que o valor preenchido no campo de input seja limpo toda vez que é feita a adição do item na lista, pois como a função adiccionaItem tem um comando que impede que a página seja recarregada, isso faria com que o input continuasse com o valor digitado após adicioná-lo à lista. (cont)
+                    // isto faz com que o valor preenchido no campo de input seja limpo toda vez que é feita a adição do item na lista, pois como a função adicionaItem tem um comando que impede que a página seja recarregada, isso faria com que o input continuasse com o valor digitado após adicioná-lo à lista. (cont)
                     // Mas a função adicionaItem também "esvazia" o novoItem após adicioná-lo à lista, então fazendo com que o value receba novoItem, fazemos com que ele se esvazie após cada adição à lista.
                     onChange={(e)=>{setNovoItem(e.target.value)}}
                 />

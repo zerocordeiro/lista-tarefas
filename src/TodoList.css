@@ -41,9 +41,10 @@ input{
 }
 
 button.add{
-    position: absolute;
+    position:absolute;
     top:0;
     right:0;
+    bottom:0;
     background: #5c66c0;
     border: none;
     color:white;
@@ -135,7 +136,7 @@ button.deleteAll:hover{
     max-width: 80%;
 }
 
-@media screen and (max-width: 900px){
+@media screen and (min-width: 900px){
     form{
         width:900px;
     }
