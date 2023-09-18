@@ -63,6 +63,7 @@ button.add:hover{
     display: flex;
     justify-content: center;
     flex-flow: column wrap;
+    width:100%;
     max-width: 600px;
     margin: auto;
     /* background: pink; */
@@ -71,6 +72,7 @@ button.add:hover{
 div.item{
     display: flex; 
     justify-content: space-between;
+    width:100%;
     /* ^ respeitar um espaço uniforme entre os itens que estão dentro da div*/
     border: 2px solid #5c66c0;
     margin-bottom: 10px;
@@ -135,7 +137,7 @@ button.deleteAll:hover{
 .icone-central{
     max-width: 80%;
 }
-
+/* 
 @media screen and (min-width: 900px){
     form{
         width:900px;
@@ -143,4 +145,4 @@ button.deleteAll:hover{
     .listaTarefas{
         width: 100%;
     }
-}
+} */
